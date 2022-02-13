@@ -19,7 +19,6 @@ form.addEventListener("submit", (e) => {
         .then((res) => {
             let hits = res.hits;
             document.getElementById("root").innerHTML = null;
-            console.log(hits);
             for (let x in hits) {
                 let img = hits[x];
                 let box = document.createElement("div");
@@ -72,7 +71,6 @@ formSubmit = (e) => {
         .then((res) => {
             let hits = res.hits;
             document.getElementById("root").innerHTML = null;
-            console.log(hits);
             for (let x in hits) {
                 let img = hits[x];
                 let box = document.createElement("div");
