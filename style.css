@@ -260,7 +260,7 @@ color: #000;
     position: relative;
     transform: translateX(-50%);
     left: 50%;
-    /*margin: 20px auto;*/
+    margin: 10px auto;
 }
 
 .card img.img {
