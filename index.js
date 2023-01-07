@@ -39,7 +39,7 @@ const get_images = (images) => {
 }
 
 const fetch_images = async (values='girl') =>{
-    let url = `https://pixabay.com/api/?key=${api}&q=${encodeURIComponent(values)}&per_page=5&pretty=true`;
+    let url = `https://pixabay.com/api/?key=${api}&q=${encodeURIComponent(values)}&per_page=50&pretty=true`;
     let fetch_res = await fetch(url);
     let response_json = await fetch_res.json();
     return get_images(response_json);
