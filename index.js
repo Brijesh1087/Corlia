@@ -90,7 +90,7 @@ const get_images = (images) => {
     tag_show()
 }
 
-const fetch_images = async (query='nature leaf', page=1) =>{
+const fetch_images = async (query='iceland water fall',page=1) =>{
     global_query = query;
     let url = `https://pixabay.com/api/?key=${api}&q=${encodeURIComponent(query)}&per_page=40&page=${page}&pretty=true`;
     let fetch_res = await fetch(url);
